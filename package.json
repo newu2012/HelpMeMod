@@ -1,9 +1,10 @@
 {
-  "name": "node",
+  "name": "helpmemod-node",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "cd Vue && npm run build",
     "test": "echo \"Error: no test specified\"",
     "start": "node index.js"
   },
