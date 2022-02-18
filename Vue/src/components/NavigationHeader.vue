@@ -12,30 +12,44 @@ export default defineComponent({
 
 <template>
   <header>
-    <div class="brand">
-      <img alt="Vue logo" class="logo" src="../assets/logo.svg" />
-      <p class="navBarText">{{ title }}</p>
-    </div>
+    <ul>
+      <li>
+        <router-link to="/">
+          <div class="brand">
+            <img alt="Vue logo" class="logo" src="../assets/logo.svg" />
+            <p class="navBarText">{{ title }}</p>
+          </div>
+        </router-link>
+      </li>
+      <li><router-link to="/about">About</router-link></li>
+      <li><router-link to="/empty">Empty</router-link></li>
+    </ul>
   </header>
 </template>
 
 <style>
 header {
-  position: fixed;
-  height: 64px;
+  position: sticky;
+  height: 48px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background-color: darkslategray;
 }
 
+ul {
+  align-items: center;
+  list-style-type: none;
+  gap: 16px;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
 .brand {
+  align-items: center;
   display: inline-flex;
   flex-direction: row;
   gap: 8px;
-  padding: 8px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .brand:hover {
