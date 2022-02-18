@@ -5,7 +5,7 @@ import NavigationHeader from "../components/NavigationHeader.vue";
 <template>
   <NavigationHeader />
   <div>
-    <p>Info about this site</p>
+    <h2 style="color: black">Info about this site</h2>
   </div>
 </template>
 

@@ -14,15 +14,19 @@ export default defineComponent({
   <header>
     <ul>
       <li>
-        <router-link to="/">
+        <router-link to="/" class="header-link">
           <div class="brand">
             <img alt="Vue logo" class="logo" src="../assets/logo.svg" />
             <p class="navBarText">{{ title }}</p>
           </div>
         </router-link>
       </li>
-      <li><router-link to="/about">About</router-link></li>
-      <li><router-link to="/empty">Empty</router-link></li>
+      <li>
+        <router-link to="/about" class="header-link">About</router-link>
+      </li>
+      <li>
+        <router-link to="/empty" class="header-link">Empty</router-link>
+      </li>
     </ul>
   </header>
 </template>
@@ -42,6 +46,19 @@ ul {
   height: inherit;
   display: flex;
   flex-direction: row;
+}
+
+li {
+  display: flex;
+  height: inherit;
+}
+
+.header-link {
+  display: inherit;
+  height: inherit;
+  width: inherit;
+  padding-inline: 8px;
+  align-items: center;
 }
 
 .brand {
