@@ -9,6 +9,7 @@ import ModInfoBar from "./components/ModInfoBar.vue";
   <main>
     <ModInfoBar />
   </main>
+  <router-view></router-view>
 </template>
 
 <style>
