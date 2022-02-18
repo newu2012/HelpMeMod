@@ -1,14 +1,6 @@
-<script setup lang="ts">
-import NavigationHeader from "./components/NavigationHeader.vue";
-import ModInfoBar from "./components/ModInfoBar.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <NavigationHeader />
-
-  <main>
-    <ModInfoBar />
-  </main>
   <router-view></router-view>
 </template>
 
@@ -39,13 +31,6 @@ main {
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 }
 </style>
