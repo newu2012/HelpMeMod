@@ -20,10 +20,11 @@ const homeRouter = require("./routes/home");
 const templatesRouter = require("./routes/templates");
 
 app.use("/", homeRouter);
-//  TODO Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 app.use("/template", templatesRouter);
-
 // Check todo above
+
+const Template = require("./models/template");
+Template.createZip().then(console.log("Mod template zip created"));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);

@@ -1,0 +1,1 @@
+import{N as e}from"./NavigationHeader.1354a388.js";import{e as o,o as r,c as t}from"./vendor.0da7e088.js";import"./index.e123ec14.js";const m=o({setup(a){return(c,n)=>(r(),t(e))}});export{m as default};
