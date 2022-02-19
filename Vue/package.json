@@ -1,6 +1,6 @@
 {
   "name": "helpmemod-vue",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -10,7 +10,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue": "^3.2.29"
+    "vue": "^3.2.29",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",

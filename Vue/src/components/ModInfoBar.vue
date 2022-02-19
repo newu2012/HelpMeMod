@@ -36,6 +36,11 @@ export default defineComponent({
       },
     };
   },
+  computed: {
+    templateUrl() {
+      return `${window.location.origin}/template`;
+    },
+  },
 });
 </script>
 
@@ -43,6 +48,9 @@ export default defineComponent({
   <div class="mainContainer">
     <div class="modInfo">
       <h2>Mod Info</h2>
+      <a href="/template" download="mod_template">
+        <button>Download mod template</button>
+      </a>
       <p>
         {{ modInfo.packageId.name }}<input v-model="modInfo.packageId.field" />
       </p>

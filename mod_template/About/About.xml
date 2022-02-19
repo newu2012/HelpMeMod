@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Template</name>
+    <author>Template Author</author>
+    <url>http://helpmemod.azurewebsites.net/</url>    <!-- Change to your mod's url -->
+    <packageId>Template.template</packageId>
+    <description>Version: 0.0.0\nInsert mod description here.</description>    <!-- Don't forget to update mod version in description -->
+    <supportedVersions>
+        <li>1.3</li>        <!-- Add other versions if needed -->
+    </supportedVersions>
+    <modDependencies>
+        <!-- Example with Harmony mod
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+    -->
+    </modDependencies>
+    <incompatibleWith>
+        <!-- Example with Harmony mod
+        <li>brrainz.harmony</li>
+    -->
+    </incompatibleWith>
+    <loadBefore>
+        <!-- Example with Harmony mod
+        <li>brrainz.harmony</li>
+    -->
+    </loadBefore>
+    <loadAfter>
+        <!-- Example with Harmony mod
+        <li>brrainz.harmony</li>
+    -->
+    </loadAfter>
+</ModMetaData>
