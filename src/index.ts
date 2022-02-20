@@ -17,12 +17,6 @@ app.enable("trust proxy");
 
 const vueAppPath = "/Vue/dist";
 app.use(express.static(process.cwd() + vueAppPath));
-app.use(function (req, res, next) {
-  if (!req.secure) {
-    return res.redirect(`https://${req.headers.host}${req.url}`);
-  }
-  next();
-});
 
 configureRouter(app);
 Template.createZip().then(() => {
