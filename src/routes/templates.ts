@@ -1,6 +1,6 @@
-import * as express from 'express'
+import * as express from "express";
 
-import { getTemplate } from '../controllers/templateController'
-export const router = express.Router()
+import { getTemplate } from "../controllers/templateController";
+export const router = express.Router();
 
-router.get('/', getTemplate)
+router.get("/", getTemplate);

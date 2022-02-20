@@ -4,17 +4,18 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:vue/essential',
-    'standard'
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended'
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
-    sourceType: 'module'
+    sourceType: 'module',
+    project: ["./tsconfig.json"]
   },
   plugins: [
     'vue',
-    '@typescript-eslint'
+    '@typescript-eslint/recommended'
   ],
   rules: {
   }
