@@ -96,5 +96,12 @@ export default defineComponent({
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  contain: content;
+}
+
+.modInfo > a > button {
+  height: 48px;
+  width: -webkit-fill-available;
+  font-size: 2vmin;
 }
 </style>

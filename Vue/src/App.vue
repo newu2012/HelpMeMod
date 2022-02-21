@@ -9,13 +9,13 @@
 
 #app {
   font-weight: normal;
-  color: aliceblue;
+  color: #adbac7;
 }
 
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: rgba(205, 217, 229, 0.7);
   transition: 0.4s;
 }
 
@@ -30,7 +30,7 @@ main {
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: rgba(205, 217, 229, 0.2);
   }
 }
 </style>

@@ -36,7 +36,7 @@ header {
   position: sticky;
   height: 48px;
   width: 100%;
-  background-color: darkslategray;
+  background-color: #2d333b;
 }
 
 ul {
@@ -59,6 +59,7 @@ li {
   width: inherit;
   padding-inline: 8px;
   align-items: center;
+  color: #cdd9e5;
 }
 
 .brand {
