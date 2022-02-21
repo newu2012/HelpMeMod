@@ -3,18 +3,21 @@
   "version": "0.0.5",
   "description": "",
   "private": "true",
-  "main": "scr/index.ts",
+  "main": "./scr/index.ts",
   "type": "module",
   "scripts": {
-    "buildDev": "cd Vue && npm run build",
+    "build": "webpack && cd Vue && npm run build",
+    "buildVue": "cd Vue && npm run build",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\"",
-    "start": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/index.ts"
+    "dev": "webpack serve",
+    "start": "node ./build/index.cjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@size-limit/preset-app": "^7.0.8",
     "@types/cookie-parser": "^1.4.2",
     "@types/express": "^4.17.3",
     "@types/morgan": "^1.9.3",
@@ -25,7 +28,8 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
-    "eslint-plugin-vue": "^8.4.1"
+    "size-limit": "^7.0.8",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
     "body-parser": "^1.19.2",
@@ -34,8 +38,10 @@
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "morgan": "1.10.0",
+    "ts-loader": "^9.2.6",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5",
+    "webpack-node-externals": "^3.0.0",
     "zip-a-folder": "^1.1.3"
   }
 }

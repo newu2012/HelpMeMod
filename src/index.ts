@@ -22,6 +22,7 @@ configureRouter(app);
 Template.createZip().then(() => {
   console.log("Mod template zip created");
 });
+//  TODO Find how to move all build files in /dist like in /Vue
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);

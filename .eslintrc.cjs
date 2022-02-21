@@ -14,7 +14,6 @@ module.exports = {
     project: ["./tsconfig.json"]
   },
   plugins: [
-    'vue',
     '@typescript-eslint/recommended'
   ],
   rules: {
