@@ -6,7 +6,7 @@
   "main": "./scr/index.ts",
   "type": "module",
   "scripts": {
-    "build": "webpack && cd Vue && npm run build",
+    "build": "webpack",
     "buildVue": "cd Vue && npm run build",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\"",
