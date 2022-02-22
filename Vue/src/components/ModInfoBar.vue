@@ -82,7 +82,6 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(35, 41, 49);
   border-radius: 16px;
 }
 

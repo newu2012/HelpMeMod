@@ -7,6 +7,10 @@
 <style>
 @import "./assets/base.css";
 
+body {
+  background-color: #22272e;
+}
+
 #app {
   font-weight: normal;
   color: #adbac7;
@@ -26,6 +30,8 @@ main {
   margin: 64px;
   width: 25%;
   height: calc(100vh - 64px - 128px);
+  border: 2px solid #444c56;
+  border-radius: 16px;
 }
 
 @media (hover: hover) {
