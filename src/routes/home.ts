@@ -1,7 +1,8 @@
 import * as express from "express";
+import { buildPath } from "../configs/buildConfig";
+
 export const router = express.Router();
-const vueAppPath = "/Vue/dist";
 
 router.get("/", (req, res, next) => {
-  res.sendFile(process.cwd() + `${vueAppPath}/index.html`);
+  res.sendFile(process.cwd() + `${buildPath}/index.html`);
 });
