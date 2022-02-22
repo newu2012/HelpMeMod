@@ -102,6 +102,6 @@ export default defineComponent({
 .modInfo > a > button {
   height: 48px;
   width: -webkit-fill-available;
-  font-size: 2vmin;
+  font-size: 1.5vmax;
 }
 </style>
