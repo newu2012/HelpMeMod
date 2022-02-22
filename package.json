@@ -1,12 +1,13 @@
 {
   "name": "helpmemod-node",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "private": "true",
   "main": "./scr/index.ts",
   "type": "module",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && cd Vue && npm run build",
+    "buildNode": "webpack",
     "buildVue": "cd Vue && npm run build",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\"",
@@ -14,7 +15,8 @@
     "start": "node --experimental-specifier-resolution=node --loader ts-node/esm ./build/index.cjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "newu2012",
+  "envFile": "./.env",
   "license": "ISC",
   "devDependencies": {
     "@size-limit/preset-app": "^7.0.8",
@@ -29,14 +31,17 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "size-limit": "^7.0.8",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "vue-tsc": "^0.31.1"
   },
   "dependencies": {
     "body-parser": "^1.19.2",
     "connect-history-api-fallback": "^1.6.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
+    "firebase": "^9.6.7",
     "morgan": "1.10.0",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.5.0",
