@@ -19,8 +19,8 @@ app.enable("trust proxy");
 
 app.use(express.static(process.cwd() + buildPath));
 configureRouter(app);
-Template.createZip().then(() => {
-  console.log("Mod template zip created");
+Template.createZip().then((value) => {
+  console.log(`Mod template zip created at ${value}`);
 });
 
 //  TODO Connect firebase auth, realtime db, storage

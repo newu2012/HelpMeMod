@@ -5,12 +5,12 @@ const __dirname = path.resolve();
 
 export class Template {
   static zipFrom = path.join(__dirname, "./src/mod_template/Template");
-  static zipTo = path.join(__dirname, "./build/mod_template.zip");
+  static zipTo = path.join(__dirname, "./build/assets/mod_template.zip");
 
   static async createZip() {
     try {
       await zip(this.zipFrom, this.zipTo);
-      return this.zipFrom;
+      return this.zipTo;
     } catch (error) {
       console.log(error);
     }
