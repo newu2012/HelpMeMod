@@ -5,7 +5,7 @@ const __dirname = path.resolve();
 
 export class Template {
   static zipFrom = path.join(__dirname, "./src/mod_template/Template");
-  static zipTo = path.join(__dirname, "./src/mod_template/mod_template.zip");
+  static zipTo = path.join(__dirname, "./build/mod_template.zip");
 
   static async createZip() {
     try {
